@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #f0f9ff, #e5e7eb); /* Zamień na Tailwind odcienie */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #888888;
+  border-radius: 20px;
+}
+
+header .logo {
+  width: 40px;
+  height: 40px;
+}
+header .logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.25s;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(7, 45, 9);
+  font-weight: bold;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: rgb(9, 108, 15);
+}
+.profilePicture {
+  position: absolute;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  top: 23px;
+}
+.profilePicture:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.25s;
+}
